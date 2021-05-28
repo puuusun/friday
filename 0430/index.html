@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
     <title>webサイトを作る上で必要なもの</title>
 </head>
 <body>
-  <header>
-   <h1>webサイトを作る上で必要なもの</h1>
+  <header id="header">
+   <h1 class="site-title">webサイトを作る上で必要なもの</h1>
   </header>
 
   <main>
    <article>
-  <h2>"html"について</h2>
+  <h2 class="main-title">"html"について</h2>
 
-  <section>
-    <h3>hタグ 見出しを表すタグ</h3>
-    <p>見出しを表します、h1から順番にh6まで</p>
+  <section class="contens-item">
+    <h3 class="contens-item-title">hタグ 見出しを表すタグ</h3>
+    <p class="contens-item-text">見出しを表します、h1から順番にh6まで</p>
   </section>
 
-<section>
-   <h3>p 文章 段落</h3>
-   <p>文章や段落を表すタグ</p>
+<section class="contens-item">
+   <h3 class="contens-item-title">p 文章 段落</h3>
+   <p class="contens-item-text">文章や段落を表すタグ</p>
+</section>
 
-
-  <h3>ul ol li</h3>
-  <p>リストを表すタグ</p>
+<section class="contens-item">
+  <h3 class="contens-item-title">ul ol li</h3>
+  <p class="contens-item-text">リストを表すタグ</p>
 
 
    <ul>
@@ -39,7 +41,7 @@
               <li>リスト２</li>
               <li>リスト３</li>
           </ul>
-        </li>
+      </li>
         <li>
          <ol>
              <li>リスト１</li>
@@ -50,13 +52,13 @@
     </ul>
 
       <ol>
-          <li>リスト１</li>
-          <li>リスト２</li>
-          <li>リスト３</li>
+        <li>リスト１</li>
+        <li>リスト２</li>
+        <li>リスト３</li>
       </ol>
 
-  <h3>dl dt dd 定義付きリスト</h3>
-  <p>定義付きリスト</p>
+  <h3 class="contens-item-title">dl dt dd 定義付きリスト</h3>
+  <p class="contens-item-text">定義付きリスト</p>
 
   <dl>
     <dt>メニュ１</dt>
@@ -74,36 +76,36 @@
   </dl>
 </section>
 
-<section>
-<h3>emとstrong 強調、重要性</h3>
-<p>
+<section class="contens-item">
+<h3 class="contens-item-title">emとstrong 強調、重要性</h3>
+<p class="contens-item-text">
   <em>emが強調</em>を表す
   <strong>strongが強い重要性</strong>
-</p>
+</p class="contens-item-text">
 </section>
 
-<section>
-<h3>small</h3>
-<p>責・警告・法的規制・著作権・ライセンス要件などの注釈や細目を表す際に使う</p>
+<section class="contens-item">
+<h3 class="contens-item-title">small</h3>
+<p class="contens-item-text">責・警告・法的規制・著作権・ライセンス要件などの注釈や細目を表す際に使う</p>
 </section>
 
-<section>
- <h3> figure,figcaption</h3>
- <p>テキストを画像にしたものは figureでマークアップするのではなく適切なタグでマークアップする</p>
+<section class="contens-item">
+ <h3 class="contens-item-title"> figure,figcaption</h3>
+ <p class="contens-item-text">テキストを画像にしたものは figureでマークアップするのではなく適切なタグでマークアップする</p>
  <figure>
   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nijinotsumiki/20151126/20151126085628.jpg" width="320" height="240" alt="よる">
   <figcaption>夜の背景画像</figcaption>
  </figure>
 </section>
 
-  <section>
-    <h3>div span</h3>
-    <p>特に意味を表さない、なるべく使わないで一旦考える、ただどうしてもグループ化したり見た目の調整に必要な場合は使うか考える</p>
+  <section class="contens-item">
+    <h3 class="contens-item-title"> div span</h3>
+    <p class="contens-item-text">特に意味を表さない、なるべく使わないで一旦考える、ただどうしてもグループ化したり見た目の調整に必要な場合は使うか考える</p>
     <div>
       test
     </div>
     <div>
-    test
+      test
     </div>
     <span>test</span>
     <span>test</span>
@@ -111,7 +113,8 @@
  </article>
 </main>
 
-<p><small>&copy;copyright</small></p>
-
+<footer id="footer">
+  <p><small>&copy;copyright</small></p>
+</footer>
 </body>
 </html>
